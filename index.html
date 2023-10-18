@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/output.css">
+</head>
+<body>
+<header class="fixed w-full left-0 top-0 px-0 py-10 z-10 transition-all">
+  <div class="container mx-auto ">
+    <div class="relative flex h-14 px-16 items-center">
+      <div class="absolute pointer custom-left">
+        <img src="https://ui8-xora-ca7b53925e5b.herokuapp.com/images/xora.svg" width="162" height="56" alt="">
+      </div>
+
+      <div class="w-full">
+        <nav class="block ">
+          <ul class="flex list-none">
+            <li class="relative flex items-center justify-between flex-1 mr-64">
+              <a href="" class="relative font-bold uppercase pointer text-base text-white">Features</a>
+              <div class="w-1.5 h-1.5 bg-purple-500 rounded-full"></div>
+              <a href="" class="relative font-bold uppercase pointer text-base text-white">Pricing</a>
+            </li>
+            <li class="relative flex items-center justify-between flex-1">
+              <a href="" class="relative font-bold uppercase pointer text-base text-white">Faq</a>
+              <div class="w-1.5 h-1.5 bg-purple-500 rounded-full"></div>
+              <a href="" class="relative font-bold uppercase pointer text-base text-white">Download</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="relative custom-padding">
+  <div class="container mx-auto px-16 py-0">
+    <div class="relative max-w-lg">
+      <div class="text-base text-green-300 uppercase font-bold">
+        video editing
+      </div>
+      <h1 class="font-black text-8xl text-white">Amazingly simple</h1>
+      <p class="small-text">We designed XORA AI Video Editor to be an easy to use, quick to learn and surprisingly
+        powerful.</p>
+      <button class="relative primary-button">
+        <span class="flex items-center h-16 px-4 py-0 gradiant rounded-xl">
+          <span class="relative z-1 flex items-center justify-center w-10 h-10 bg-svg mt-0 mr-5 mb-0 ml-[-9px]">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#eaedff"><path
+              d="M17.347 2.068a1 1 0 0 1 .623 1.062l-.848 6.368h3.833l.638.017c.186.017.523.062.825.295a1.5 1.5 0 0 1 .582 1.132c.014.382-.146.683-.24.844a7.47 7.47 0 0 1-.357.53l-.02.028-6.588 9.235a1 1 0 0 1-1.803-.713l.848-6.368h-3.833c-.221 0-.449 0-.638-.017s-.523-.062-.825-.295a1.5 1.5 0 0 1-.582-1.132c-.014-.382.146-.683.24-.844s.229-.35.357-.53l.02-.028 6.588-9.235a1 1 0 0 1 1.18-.349zM8.99 16.498a1 1 0 1 1 0 2H3.497a1 1 0 1 1 0-2H8.99zm-2.497-5.5a1 1 0 1 1 0 2H1.999a1 1 0 1 1 0-2h4.494zm2.497-5.5a1 1 0 1 1 0 2H3.996a1 1 0 1 1 0-2H8.99z"></path></svg>
+          </span>
+          <span class="relative text-white text-base text-blue-200 uppercase font-black">Try it now</span>
+        </span>
+
+      </button>
+    </div>
+    <div class="absolute hero-img">
+      <img src="img/hero.png" width="1230" height="1230" alt="">
+    </div>
+  </div>
+</div>
+
+<script>
+  const header = document.querySelector('header');
+
+  // Add a scroll event listener
+  window.addEventListener('scroll', () => {
+    // Define a scroll threshold (e.g., 100 pixels)
+    const scrollThreshold = 100;
+
+    // Check the scroll position
+    if (window.scrollY > scrollThreshold) {
+      // Add a custom class for the specified styles
+      header.classList.add('my-custom-header');
+    } else {
+      // Remove the custom class when scrolling back up
+      header.classList.remove('my-custom-header');
+    }
+  });
+</script>
+</body>
+</html>
